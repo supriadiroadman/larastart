@@ -7,7 +7,6 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
-
 import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
@@ -22,6 +21,7 @@ let routes = [{
 ]
 
 const router = new VueRouter({
+    mode: 'history',
     routes // short for `routes: routes`
 })
 
